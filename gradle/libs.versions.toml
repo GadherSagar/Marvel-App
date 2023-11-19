@@ -1,0 +1,144 @@
+[versions]
+androidGradlePlugin = "8.1.2"
+androidLibraryPlugin = "8.1.0"
+# Kotlin
+kotlinBom = "1.9.0"
+kotlinAndroidPlugin = "1.9.10"
+kspPlugin = "1.9.10-1.0.13" # must start with kotlinAndroidPlugin version
+kaptPlugin = "1.8.0"
+kotlinxCoroutines = "1.7.3"
+detektPlugin = "1.23.1"
+# Hilt
+hilt = "2.48.1"
+androidxHiltNavigationCompose = "1.1.0"
+# Google services
+playServices = "20.7.0"
+gmsPlugin = "4.3.15"
+# Firebase
+firebaseBom = "32.6.0"
+firebaseCrashlyticsPlugin = "2.9.9"
+# Android
+coreKtx = "1.12.0"
+fragmentKtx = "1.6.2"
+activityKtx = "1.8.1"
+lifecycleKtx = "2.6.2"
+appcompat = "1.6.1"
+material = "1.10.0"
+# Splash
+splashVersion = "1.0.1"
+#swiperefreshlayout
+swiperefreshlayout = "1.1.0"
+#Room
+room = "2.6.0"
+# Retrofit
+retrofit = "2.9.0"
+# Moshi for json parsing
+moshi = "1.15.0"
+# Okhttp bom
+okHttpBom = "4.11.0"
+#coil
+coil = "2.5.0"
+# Compose
+composeBom = "2023.10.01"
+androidxComposeCompiler = "1.4.7"
+# https://developer.android.com/jetpack/androidx/releases/navigation
+androidxNavigation = "2.7.5"
+activityCompose = "1.8.1"
+# Datastore
+dataStorePref = "1.0.0"
+
+# Testing
+junit = "4.13.2"
+testExtJunit = "1.1.5"
+espressoCore = "3.5.1"
+# Mockk
+mockk = "1.13.7"
+
+[libraries]
+# Detekt formatting
+detekt-formatting = { group = "io.gitlab.arturbosch.detekt", name = "detekt-formatting", version.ref = "detektPlugin" }
+# Kotlin
+jetbrains-kotlin-bom = { group = "org.jetbrains.kotlin", name = "kotlin-bom", version.ref = "kotlinBom" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }
+# Android
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityKtx" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+android-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swiperefreshlayout" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleKtx" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleKtx" }
+androidx-lifecycle-compiler = { group = "androidx.lifecycle", name = "lifecycle-compiler", version.ref = "lifecycleKtx" }
+# Compose
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose" }
+# There are some feature not available in material3 library like pull to refresh
+# That's why we needed to add materal library
+androidx-compose-material = { group = "androidx.compose.material", name = "material" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+# Navigation in Compose
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidxNavigation" }
+# Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "testExtJunit" }
+androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+test-mockk = { group = "io.mockk", name = "mockk-android", version.ref = "mockk" }
+# Compose testing
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+# Splash
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashVersion" }
+# Hilt
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "androidxHiltNavigationCompose" }
+# Room
+androidx-room = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+# Retrofit
+retrofit2-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit2-converter-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
+# Moshi
+moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshi" }
+moshi-codegen = { group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "moshi" }
+# OkHttp
+okhttp3-okHttpBom = { group = "com.squareup.okhttp3", name = "okhttp-bom", version.ref = "okHttpBom" }
+okhttp3-okhttp = { group = "com.squareup.okhttp3", name = "okhttp" }
+okhttp3-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor" }
+#coil
+coil-kt = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
+# Firebase
+firebase-crashlytics-gradlePlugin = { group = "com.google.firebase", name = "firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsPlugin" }
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth-ktx" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging-ktx" }
+# Google Play service
+play-services-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "playServices" }
+# Preferences DataStore
+preferences-data-store = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "dataStorePref" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidLibraryPlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinAndroidPlugin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "kspPlugin" }
+kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kaptPlugin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+gms = { id = "com.google.gms.google-services", version.ref = "gmsPlugin" }
+firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebaseCrashlyticsPlugin" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detektPlugin" }
+
+
+[bundles]
+
